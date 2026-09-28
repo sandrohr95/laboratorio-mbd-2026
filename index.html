@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laboratorio · Máster Big Data UMA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#121212; --panel:#1f1f1f; --line:#333; --text:#f4f4f4; --muted:#a8a8a8; --orange:#db7810; --lime:#b5d334; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: radial-gradient(900px 600px at 100% 0%, rgba(219,120,16,.16), transparent 60%), var(--bg);
+         color: var(--text); font: 17px/1.5 Inter, system-ui, sans-serif; min-height: 100vh; padding: 56px 16px; }
+  main { max-width: 920px; margin: 0 auto; }
+  .eyebrow { font: 700 13px Montserrat, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--lime); }
+  h1 { font: 800 clamp(34px, 6vw, 56px)/1.05 Montserrat, sans-serif; margin: 10px 0 8px; }
+  h1 span { color: var(--orange); }
+  .bar { width: 64px; height: 6px; border-radius: 3px; background: var(--orange); margin: 22px 0; }
+  .lead { color: var(--muted); max-width: 640px; }
+  .lead a { color: var(--lime); }
+  .grid { display: grid; gap: 16px; margin-top: 40px; }
+  .card { display: flex; gap: 24px; align-items: center; background: var(--panel); border: 1px solid var(--line);
+          border-radius: 16px; padding: 20px 24px; }
+  .num { font: 800 44px Montserrat, sans-serif; color: var(--orange); min-width: 64px; }
+  .date { color: var(--muted); font-size: 14px; }
+  h2 { font: 700 21px/1.25 Montserrat, sans-serif; margin: 2px 0 12px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn { font-size: 14px; font-weight: 600; text-decoration: none; color: var(--text); border: 1px solid #555;
+         border-radius: 999px; padding: 6px 14px; }
+  .btn:hover { border-color: var(--lime); color: var(--lime); }
+  .btn.primary { background: var(--orange); border-color: var(--orange); color: #111; }
+  .btn.primary:hover { background: var(--lime); border-color: var(--lime); color: #111; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 560px) { .card { flex-direction: column; align-items: flex-start; gap: 4px; } }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Máster en Big Data, IA e Ingeniería de Datos · UMA</p>
+  <h1>Módulo de <span>Laboratorio</span></h1>
+  <div class="bar"></div>
+  <p class="lead">Material del curso 2026-2027: diapositivas, guías de laboratorio y chuletas de cada sesión.
+  El código y los ejercicios están en el <a href="https://github.com/sandrohr95/laboratorio-mbd-2026">repositorio de GitHub</a>.</p>
+  <section class="grid">
+    <article class="card">
+      <div class="body">
+        <h2>Sistema operativo, terminal e IDEs</h2>
+        <div class="links"><a class="btn primary" href="slides/SO_Terminal_IDEs.html">Diapositivas</a><a class="btn" href="https://github.com/sandrohr95/laboratorio-mbd-2026/blob/main/sesiones/SO_Terminal_IDEs/GUIA.md">Guía</a><a class="btn" href="https://github.com/sandrohr95/laboratorio-mbd-2026/blob/main/sesiones/SO_Terminal_IDEs/CHEATSHEET.md">Chuleta</a></div>
+      </div>
+    </article>
+  </section>
+  <footer>Sandro Hurtado Requena · Khaos Research · Universidad de Málaga</footer>
+</main>
+</body>
+</html>
