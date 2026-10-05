@@ -18,3 +18,4 @@ Trabaja en tu propia carpeta o en tu propio repositorio. Si modificas los archiv
 | Sesión | Guía | Chuleta | Diapositivas |
 |---|---|---|---|
 | Presentación del módulo | [Guía](sesiones/Presentacion/GUIA.md) | – | [Presentación](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Presentacion_Modulo_Laboratorio.html) · [Preparar el entorno](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Instalacion_VSCode_Git_GitHub.html) |
+| Sistema operativo, terminal e IDEs | [Guía](sesiones/SO_Terminal_IDEs/GUIA.md) | [Chuleta](sesiones/SO_Terminal_IDEs/CHEATSHEET.md) | [Diapositivas](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/SO_Terminal_IDEs.html) |
