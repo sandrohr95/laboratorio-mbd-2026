@@ -15,8 +15,7 @@ Trabaja en tu propia carpeta o en tu propio repositorio. Si modificas los archiv
 
 ## Sesiones
 
-| Sesión | Guía | Chuleta | Diapositivas | Material adicional |
-|---|---|---|---|---|
-| Presentación del módulo | [Guía](sesiones/Presentacion/GUIA.md) | – | [Presentación](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Presentacion_Modulo_Laboratorio.html) · [Preparar el entorno](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Instalacion_VSCode_Git_GitHub.html) | – |
-| Sistema operativo, terminal e IDEs | [Guía](sesiones/SO_Terminal_IDEs/GUIA.md) | [Chuleta](sesiones/SO_Terminal_IDEs/CHEATSHEET.md) | [Diapositivas](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/SO_Terminal_IDEs.html) | – |
-| Python II · Estructuras de datos, ficheros y errores | [Guía](sesiones/Python_II_Estructuras_ficheros/GUIA.md) | [Chuleta](sesiones/Python_II_Estructuras_ficheros/CHEATSHEET.md) | [Diapositivas](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Python_II_Estructuras_ficheros.html) · [Entornos virtuales](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Entornos_virtuales.html) | [Entornos virtuales y dependencias](sesiones/Python_II_Estructuras_ficheros/ENTORNOS.md) |
+| Sesión | Guía | Chuleta | Diapositivas |
+|---|---|---|---|
+| Presentación del módulo | [Guía](sesiones/Presentacion/GUIA.md) | – | [Presentación](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Presentacion_Modulo_Laboratorio.html) · [Preparar el entorno](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Instalacion_VSCode_Git_GitHub.html) |
+| Sistema operativo, terminal e IDEs | [Guía](sesiones/SO_Terminal_IDEs/GUIA.md) | [Chuleta](sesiones/SO_Terminal_IDEs/CHEATSHEET.md) | [Diapositivas](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/SO_Terminal_IDEs.html) |
