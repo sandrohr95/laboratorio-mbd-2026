@@ -63,7 +63,7 @@ Recórrelo de arriba abajo, ejecutando las celdas **en orden**. En cada ejercici
 | 2. Tuplas | Inmutabilidad, desempaquetado y funciones que devuelven varios valores |
 | 3. Diccionarios | Acceso con `[]` y `get`, recorrer con `items()`, diccionarios anidados y contar apariciones |
 | 4. Conjuntos | Quitar duplicados, unión, intersección y diferencia. Por qué buscar en un conjunto es tan rápido |
-| 5. Comprensiones y ordenación | Comprensiones de listas, diccionarios y conjuntos. Ordenar con `key` y `lambda` |
+| 5. Comprensiones y ordenación | Comprensiones de listas, diccionarios y conjuntos. Funciones `lambda`. Ordenar con `key` |
 | 6. Ficheros | Rutas con `pathlib`, `open` con `with`, CSV con `csv.DictReader` y `DictWriter`, JSON con `json.load` y `json.dump` |
 | 7. Errores y excepciones | `try`/`except`/`else`/`finally`, lanzar errores con `raise` y excepciones propias |
 | 8. Biblioteca estándar y módulos | `collections`, `datetime`, `math`, `random`, `statistics` y crear tu propio módulo |
