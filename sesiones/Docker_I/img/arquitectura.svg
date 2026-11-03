@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#db7810"/></marker>
+  </defs>
+  <rect width="960" height="420" rx="18" fill="#ffffff"/>
+
+  <!-- Cliente -->
+  <rect x="30" y="80" width="230" height="250" rx="14" fill="#f4f4f4" stroke="#888" stroke-width="2"/>
+  <text x="145" y="114" text-anchor="middle" font-size="20" font-weight="700" fill="#1f1f1f">Cliente</text>
+  <text x="145" y="138" text-anchor="middle" font-size="14" fill="#555">tu terminal</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" fill="#1f1f1f">
+    <text x="55" y="180">docker run</text>
+    <text x="55" y="210">docker build</text>
+    <text x="55" y="240">docker ps</text>
+    <text x="55" y="270">docker pull</text>
+  </g>
+  <text x="145" y="310" text-anchor="middle" font-size="13" fill="#555">o Docker Desktop</text>
+
+  <!-- Host / VM -->
+  <rect x="320" y="40" width="400" height="340" rx="14" fill="#f6fbea" stroke="#8aa61f" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="520" y="68" text-anchor="middle" font-size="15" fill="#5c7212" font-weight="600">Linux: tu ordenador · macOS/Windows: VM Linux de Docker Desktop</text>
+  <rect x="350" y="88" width="340" height="70" rx="12" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+  <text x="520" y="118" text-anchor="middle" font-size="19" font-weight="700" fill="#1f1f1f">Docker Engine (dockerd)</text>
+  <text x="520" y="141" text-anchor="middle" font-size="14" fill="#555">el servicio que hace el trabajo</text>
+  <rect x="350" y="180" width="160" height="180" rx="12" fill="#dceefd" stroke="#2f80c8" stroke-width="2"/>
+  <text x="430" y="208" text-anchor="middle" font-size="17" font-weight="700" fill="#1f1f1f">Imágenes</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#1f1f1f" text-anchor="middle">
+    <text x="430" y="240">python:3.13-slim</text>
+    <text x="430" y="265">nginx:alpine</text>
+    <text x="430" y="290">postgres:17</text>
+  </g>
+  <rect x="530" y="180" width="160" height="180" rx="12" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+  <text x="610" y="208" text-anchor="middle" font-size="17" font-weight="700" fill="#1f1f1f">Contenedores</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#1f1f1f" text-anchor="middle">
+    <text x="610" y="240">web</text>
+    <text x="610" y="265">bd</text>
+    <text x="610" y="290">analisis</text>
+  </g>
+
+  <!-- Registro -->
+  <rect x="780" y="130" width="150" height="150" rx="14" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+  <text x="855" y="190" text-anchor="middle" font-size="19" font-weight="700" fill="#1f1f1f">Registro</text>
+  <text x="855" y="216" text-anchor="middle" font-size="14" fill="#555">Docker Hub</text>
+  <text x="855" y="238" text-anchor="middle" font-size="14" fill="#555">GHCR...</text>
+
+  <line x1="265" y1="205" x2="342" y2="125" stroke="#db7810" stroke-width="3" marker-end="url(#a)"/>
+  <text x="300" y="150" text-anchor="middle" font-size="13" fill="#db7810" font-weight="700">API</text>
+  <defs><marker id="a2" markerWidth="12" markerHeight="12" refX="2" refY="6" orient="auto"><path d="M12,0 L0,6 L12,12 z" fill="#db7810"/></marker></defs>
+  <line x1="700" y1="123" x2="772" y2="175" stroke="#db7810" stroke-width="3" marker-end="url(#a)" marker-start="url(#a2)"/>
+  <text x="790" y="115" text-anchor="middle" font-size="13" fill="#db7810" font-weight="700">pull / push</text>
+</svg>

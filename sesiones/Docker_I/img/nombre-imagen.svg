@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <rect width="960" height="250" rx="18" fill="#ffffff"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="34" font-weight="700" text-anchor="middle">
+    <rect x="40" y="50" width="200" height="70" rx="12" fill="#ececec" stroke="#888" stroke-width="2"/>
+    <text x="140" y="97" fill="#555">docker.io</text>
+    <text x="255" y="97" fill="#999">/</text>
+    <rect x="270" y="50" width="160" height="70" rx="12" fill="#dceefd" stroke="#2f80c8" stroke-width="2"/>
+    <text x="350" y="97" fill="#2f80c8">library</text>
+    <text x="445" y="97" fill="#999">/</text>
+    <rect x="460" y="50" width="160" height="70" rx="12" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+    <text x="540" y="97" fill="#5c7212">python</text>
+    <text x="635" y="97" fill="#999">:</text>
+    <rect x="650" y="50" width="270" height="70" rx="12" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+    <text x="785" y="97" fill="#b55f00">3.13-slim</text>
+  </g>
+  <g font-size="17" text-anchor="middle" fill="#1f1f1f">
+    <text x="140" y="155" font-weight="700">Registro</text>
+    <text x="140" y="180" font-size="14" fill="#555">por defecto, Docker Hub</text>
+    <text x="350" y="155" font-weight="700">Usuario u organización</text>
+    <text x="350" y="180" font-size="14" fill="#555">library = imágenes oficiales</text>
+    <text x="540" y="155" font-weight="700">Repositorio</text>
+    <text x="540" y="180" font-size="14" fill="#555">el nombre de la imagen</text>
+    <text x="785" y="155" font-weight="700">Etiqueta (tag)</text>
+    <text x="785" y="180" font-size="14" fill="#555">versión o variante; por defecto, latest</text>
+  </g>
+  <text x="480" y="228" text-anchor="middle" font-size="14" fill="#555">«python:3.13-slim» es la forma corta de «docker.io/library/python:3.13-slim». Tu imagen en Docker Hub sería «tu_usuario/mi-imagen:1.0».</text>
+</svg>

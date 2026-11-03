@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <defs>
+    <marker id="f" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#db7810"/></marker>
+  </defs>
+  <rect width="960" height="360" rx="18" fill="#ffffff"/>
+
+  <!-- Dockerfile -->
+  <rect x="40" y="200" width="200" height="110" rx="14" fill="#f4f4f4" stroke="#888" stroke-width="2"/>
+  <text x="140" y="236" text-anchor="middle" font-size="20" font-weight="700" fill="#1f1f1f">Dockerfile</text>
+  <text x="140" y="262" text-anchor="middle" font-size="14" fill="#555">la receta (texto)</text>
+  <text x="140" y="288" text-anchor="middle" font-size="13" fill="#555" font-family="ui-monospace, Menlo, monospace">FROM · COPY · RUN · CMD</text>
+
+  <!-- Imagen -->
+  <rect x="380" y="200" width="200" height="110" rx="14" fill="#dceefd" stroke="#2f80c8" stroke-width="2"/>
+  <text x="480" y="236" text-anchor="middle" font-size="20" font-weight="700" fill="#1f1f1f">Imagen</text>
+  <text x="480" y="262" text-anchor="middle" font-size="14" fill="#555">plantilla de solo lectura</text>
+  <text x="480" y="288" text-anchor="middle" font-size="14" fill="#555">formada por capas</text>
+
+  <!-- Contenedor -->
+  <rect x="720" y="200" width="200" height="110" rx="14" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+  <text x="820" y="236" text-anchor="middle" font-size="20" font-weight="700" fill="#1f1f1f">Contenedor</text>
+  <text x="820" y="262" text-anchor="middle" font-size="14" fill="#555">una imagen en marcha</text>
+  <text x="820" y="288" text-anchor="middle" font-size="14" fill="#555">proceso aislado</text>
+
+  <!-- Registro -->
+  <rect x="380" y="30" width="200" height="90" rx="14" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+  <text x="480" y="66" text-anchor="middle" font-size="20" font-weight="700" fill="#1f1f1f">Registro</text>
+  <text x="480" y="92" text-anchor="middle" font-size="14" fill="#555">Docker Hub, GHCR...</text>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#db7810" font-weight="700">
+    <line x1="245" y1="255" x2="372" y2="255" stroke="#db7810" stroke-width="3" marker-end="url(#f)"/>
+    <text x="308" y="244" text-anchor="middle">docker build</text>
+    <line x1="585" y1="255" x2="712" y2="255" stroke="#db7810" stroke-width="3" marker-end="url(#f)"/>
+    <text x="648" y="244" text-anchor="middle">docker run</text>
+    <line x1="455" y1="195" x2="455" y2="128" stroke="#db7810" stroke-width="3" marker-end="url(#f)"/>
+    <text x="445" y="168" text-anchor="end">docker push</text>
+    <line x1="505" y1="128" x2="505" y2="195" stroke="#db7810" stroke-width="3" marker-end="url(#f)"/>
+    <text x="515" y="168">docker pull</text>
+  </g>
+  <text x="480" y="340" text-anchor="middle" font-size="14" fill="#555">Construir (build) · Compartir (push/pull) · Ejecutar (run)</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <rect width="960" height="470" rx="18" fill="#ffffff"/>
+  <text x="240" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#1f1f1f">Máquinas virtuales</text>
+  <text x="720" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#1f1f1f">Contenedores</text>
+  <line x1="480" y1="30" x2="480" y2="440" stroke="#d0d0d0" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- VM -->
+  <g font-size="16" text-anchor="middle">
+    <rect x="40" y="70" width="190" height="50" rx="10" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+    <text x="135" y="101" fill="#1f1f1f" font-weight="600">App A</text>
+    <rect x="250" y="70" width="190" height="50" rx="10" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+    <text x="345" y="101" fill="#1f1f1f" font-weight="600">App B</text>
+    <rect x="40" y="128" width="190" height="44" rx="10" fill="#fdf1e3" stroke="#db7810" stroke-width="1.5"/>
+    <text x="135" y="156" fill="#1f1f1f">Librerías</text>
+    <rect x="250" y="128" width="190" height="44" rx="10" fill="#fdf1e3" stroke="#db7810" stroke-width="1.5"/>
+    <text x="345" y="156" fill="#1f1f1f">Librerías</text>
+    <rect x="40" y="180" width="190" height="70" rx="10" fill="#dceefd" stroke="#2f80c8" stroke-width="2"/>
+    <text x="135" y="210" fill="#1f1f1f" font-weight="600">SO invitado</text>
+    <text x="135" y="232" fill="#555" font-size="14">núcleo propio · GB</text>
+    <rect x="250" y="180" width="190" height="70" rx="10" fill="#dceefd" stroke="#2f80c8" stroke-width="2"/>
+    <text x="345" y="210" fill="#1f1f1f" font-weight="600">SO invitado</text>
+    <text x="345" y="232" fill="#555" font-size="14">núcleo propio · GB</text>
+    <rect x="40" y="262" width="400" height="50" rx="10" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+    <text x="240" y="293" fill="#1f1f1f" font-weight="600">Hipervisor (VirtualBox, VMware, Hyper-V)</text>
+    <rect x="40" y="320" width="400" height="50" rx="10" fill="#ececec" stroke="#888" stroke-width="2"/>
+    <text x="240" y="351" fill="#1f1f1f">Sistema operativo anfitrión</text>
+    <rect x="40" y="378" width="400" height="50" rx="10" fill="#d9d9d9" stroke="#888" stroke-width="2"/>
+    <text x="240" y="409" fill="#1f1f1f">Hardware</text>
+  </g>
+
+  <!-- Contenedores -->
+  <g font-size="16" text-anchor="middle">
+    <rect x="520" y="70" width="125" height="50" rx="10" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+    <text x="582" y="101" fill="#1f1f1f" font-weight="600">App A</text>
+    <rect x="657" y="70" width="125" height="50" rx="10" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+    <text x="719" y="101" fill="#1f1f1f" font-weight="600">App B</text>
+    <rect x="794" y="70" width="126" height="50" rx="10" fill="#fbe3c8" stroke="#db7810" stroke-width="2"/>
+    <text x="857" y="101" fill="#1f1f1f" font-weight="600">App C</text>
+    <rect x="520" y="128" width="125" height="44" rx="10" fill="#fdf1e3" stroke="#db7810" stroke-width="1.5"/>
+    <text x="582" y="156" fill="#1f1f1f">Librerías</text>
+    <rect x="657" y="128" width="125" height="44" rx="10" fill="#fdf1e3" stroke="#db7810" stroke-width="1.5"/>
+    <text x="719" y="156" fill="#1f1f1f">Librerías</text>
+    <rect x="794" y="128" width="126" height="44" rx="10" fill="#fdf1e3" stroke="#db7810" stroke-width="1.5"/>
+    <text x="857" y="156" fill="#1f1f1f">Librerías</text>
+    <text x="720" y="210" fill="#555" font-size="14">sin sistema operativo propio · MB · arrancan en segundos</text>
+    <rect x="520" y="262" width="400" height="50" rx="10" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+    <text x="720" y="293" fill="#1f1f1f" font-weight="600">Motor de contenedores (Docker Engine)</text>
+    <rect x="520" y="320" width="400" height="50" rx="10" fill="#dceefd" stroke="#2f80c8" stroke-width="2"/>
+    <text x="720" y="351" fill="#1f1f1f" font-weight="600">SO anfitrión · un único núcleo, compartido</text>
+    <rect x="520" y="378" width="400" height="50" rx="10" fill="#d9d9d9" stroke="#888" stroke-width="2"/>
+    <text x="720" y="409" fill="#1f1f1f">Hardware</text>
+  </g>
+</svg>

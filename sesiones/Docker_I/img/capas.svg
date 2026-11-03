@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <rect width="960" height="420" rx="18" fill="#ffffff"/>
+  <text x="480" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1f1f1f">Una imagen, dos contenedores</text>
+
+  <!-- capas de escritura -->
+  <g font-size="14" text-anchor="middle">
+    <rect x="170" y="70" width="290" height="56" rx="10" fill="#fbe3c8" stroke="#db7810" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="315" y="96" fill="#1f1f1f" font-weight="700">Contenedor «web1» · capa de escritura</text>
+    <text x="315" y="116" fill="#555" font-size="13">se borra con el contenedor</text>
+    <rect x="500" y="70" width="290" height="56" rx="10" fill="#fbe3c8" stroke="#db7810" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="645" y="96" fill="#1f1f1f" font-weight="700">Contenedor «web2» · capa de escritura</text>
+    <text x="645" y="116" fill="#555" font-size="13">se borra con el contenedor</text>
+  </g>
+
+  <!-- capas de imagen -->
+  <rect x="150" y="146" width="660" height="252" rx="14" fill="#f3f8fd" stroke="#2f80c8" stroke-width="2"/>
+  <text x="170" y="172" font-size="15" font-weight="700" fill="#2f80c8">Imagen (solo lectura, compartida)</text>
+  <g font-size="15">
+    <rect x="200" y="186" width="560" height="44" rx="8" fill="#dceefd" stroke="#2f80c8" stroke-width="1.5"/>
+    <text x="220" y="214" fill="#1f1f1f" font-family="ui-monospace, Menlo, monospace">CMD ["python", "app.py"]</text>
+    <text x="740" y="214" text-anchor="end" fill="#555" font-size="13">metadatos, 0 B</text>
+    <rect x="200" y="236" width="560" height="44" rx="8" fill="#dceefd" stroke="#2f80c8" stroke-width="1.5"/>
+    <text x="220" y="264" fill="#1f1f1f" font-family="ui-monospace, Menlo, monospace">COPY app.py .</text>
+    <text x="740" y="264" text-anchor="end" fill="#555" font-size="13">tu código, KB</text>
+    <rect x="200" y="286" width="560" height="44" rx="8" fill="#dceefd" stroke="#2f80c8" stroke-width="1.5"/>
+    <text x="220" y="314" fill="#1f1f1f" font-family="ui-monospace, Menlo, monospace">RUN pip install -r requirements.txt</text>
+    <text x="740" y="314" text-anchor="end" fill="#555" font-size="13">librerías, MB</text>
+    <rect x="200" y="336" width="560" height="44" rx="8" fill="#c5e1f8" stroke="#2f80c8" stroke-width="1.5"/>
+    <text x="220" y="364" fill="#1f1f1f" font-family="ui-monospace, Menlo, monospace">FROM python:3.13-slim</text>
+    <text x="740" y="364" text-anchor="end" fill="#555" font-size="13">sistema base + Python, MB</text>
+  </g>
+  <text x="70" y="290" text-anchor="middle" font-size="13" fill="#555" transform="rotate(-90 70 290)">se apilan de abajo arriba</text>
+  <line x1="95" y1="380" x2="95" y2="190" stroke="#888" stroke-width="2"/>
+  <path d="M88,198 L95,184 L102,198 z" fill="#888"/>
+</svg>

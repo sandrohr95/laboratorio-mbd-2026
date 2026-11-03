@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <defs>
+    <marker id="b1" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#db7810"/></marker>
+    <marker id="b2" markerWidth="12" markerHeight="12" refX="2" refY="6" orient="auto"><path d="M12,0 L0,6 L12,12 z" fill="#db7810"/></marker>
+  </defs>
+  <rect width="960" height="320" rx="18" fill="#ffffff"/>
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1f1f1f" font-family="ui-monospace, Menlo, monospace">docker run -v "$(pwd)/datos:/app/datos:ro" -v "$(pwd)/salida:/app/salida" ...</text>
+
+  <rect x="30" y="64" width="380" height="230" rx="14" fill="#f3f8fd" stroke="#2f80c8" stroke-width="2"/>
+  <text x="50" y="92" font-size="15" font-weight="700" fill="#2f80c8">Tu ordenador</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#1f1f1f">
+    <text x="60" y="130">bicis-docker/</text>
+    <rect x="80" y="145" width="200" height="40" rx="8" fill="#dceefd" stroke="#2f80c8" stroke-width="1.5"/>
+    <text x="95" y="171">datos/</text>
+    <rect x="80" y="200" width="200" height="40" rx="8" fill="#dceefd" stroke="#2f80c8" stroke-width="1.5"/>
+    <text x="95" y="226">salida/</text>
+    <text x="95" y="270" fill="#555" font-size="14">analisis.py, Dockerfile...</text>
+  </g>
+
+  <rect x="550" y="64" width="380" height="230" rx="14" fill="#f6fbea" stroke="#8aa61f" stroke-width="2"/>
+  <text x="570" y="92" font-size="15" font-weight="700" fill="#5c7212">Contenedor</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#1f1f1f">
+    <text x="580" y="130">/app/</text>
+    <rect x="600" y="145" width="220" height="40" rx="8" fill="#eef5d3" stroke="#8aa61f" stroke-width="1.5"/>
+    <text x="615" y="171">datos/  (solo lectura)</text>
+    <rect x="600" y="200" width="220" height="40" rx="8" fill="#eef5d3" stroke="#8aa61f" stroke-width="1.5"/>
+    <text x="615" y="226">salida/</text>
+    <text x="615" y="270" fill="#555" font-size="14">analisis.py (de la imagen)</text>
+  </g>
+
+  <line x1="285" y1="165" x2="592" y2="165" stroke="#db7810" stroke-width="3" marker-end="url(#b1)"/>
+  <text x="438" y="155" text-anchor="middle" font-size="13" fill="#db7810" font-weight="700">solo lectura (:ro)</text>
+  <line x1="290" y1="220" x2="592" y2="220" stroke="#db7810" stroke-width="3" marker-end="url(#b1)" marker-start="url(#b2)"/>
+  <text x="438" y="210" text-anchor="middle" font-size="13" fill="#db7810" font-weight="700">misma carpeta, en directo</text>
+</svg>

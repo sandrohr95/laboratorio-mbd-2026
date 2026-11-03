@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <rect width="960" height="400" rx="18" fill="#ffffff"/>
+  <text x="250" y="40" text-anchor="middle" font-size="19" font-weight="700" fill="#1f1f1f">Orden malo: cambias app.py</text>
+  <text x="720" y="40" text-anchor="middle" font-size="19" font-weight="700" fill="#1f1f1f">Orden bueno: cambias app.py</text>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15">
+    <!-- malo -->
+    <rect x="40" y="70" width="420" height="50" rx="10" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+    <text x="60" y="101" fill="#1f1f1f">FROM python:3.13-slim</text><text x="440" y="101" text-anchor="end" fill="#5c7212" font-weight="700">CACHED</text>
+    <rect x="40" y="130" width="420" height="50" rx="10" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+    <text x="60" y="161" fill="#1f1f1f">WORKDIR /app</text><text x="440" y="161" text-anchor="end" fill="#5c7212" font-weight="700">CACHED</text>
+    <rect x="40" y="190" width="420" height="50" rx="10" fill="#fde0dc" stroke="#d9473a" stroke-width="2"/>
+    <text x="60" y="221" fill="#1f1f1f">COPY . .</text><text x="440" y="221" text-anchor="end" fill="#d9473a" font-weight="700">CAMBIA</text>
+    <rect x="40" y="250" width="420" height="50" rx="10" fill="#fde0dc" stroke="#d9473a" stroke-width="2"/>
+    <text x="60" y="281" fill="#1f1f1f">RUN pip install ...</text><text x="440" y="281" text-anchor="end" fill="#d9473a" font-weight="700">REHACE (lento)</text>
+    <rect x="40" y="310" width="420" height="50" rx="10" fill="#fde0dc" stroke="#d9473a" stroke-width="2"/>
+    <text x="60" y="341" fill="#1f1f1f">CMD ["python","app.py"]</text><text x="440" y="341" text-anchor="end" fill="#d9473a" font-weight="700">REHACE</text>
+
+    <!-- bueno -->
+    <rect x="510" y="70" width="420" height="50" rx="10" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+    <text x="530" y="101" fill="#1f1f1f">FROM python:3.13-slim</text><text x="910" y="101" text-anchor="end" fill="#5c7212" font-weight="700">CACHED</text>
+    <rect x="510" y="130" width="420" height="50" rx="10" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+    <text x="530" y="161" fill="#1f1f1f">COPY requirements.txt .</text><text x="910" y="161" text-anchor="end" fill="#5c7212" font-weight="700">CACHED</text>
+    <rect x="510" y="190" width="420" height="50" rx="10" fill="#eef5d3" stroke="#8aa61f" stroke-width="2"/>
+    <text x="530" y="221" fill="#1f1f1f">RUN pip install ...</text><text x="910" y="221" text-anchor="end" fill="#5c7212" font-weight="700">CACHED</text>
+    <rect x="510" y="250" width="420" height="50" rx="10" fill="#fde0dc" stroke="#d9473a" stroke-width="2"/>
+    <text x="530" y="281" fill="#1f1f1f">COPY app.py .</text><text x="910" y="281" text-anchor="end" fill="#d9473a" font-weight="700">CAMBIA</text>
+    <rect x="510" y="310" width="420" height="50" rx="10" fill="#fde0dc" stroke="#d9473a" stroke-width="2"/>
+    <text x="530" y="341" fill="#1f1f1f">CMD ["python","app.py"]</text><text x="910" y="341" text-anchor="end" fill="#d9473a" font-weight="700">REHACE (rápido)</text>
+  </g>
+  <text x="480" y="386" text-anchor="middle" font-size="14" fill="#555">Docker reutiliza las capas hasta la primera que cambia; desde ahí, rehace todas las siguientes.</text>
+</svg>
