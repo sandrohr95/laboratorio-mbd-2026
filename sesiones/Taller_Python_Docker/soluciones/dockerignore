@@ -1,0 +1,7 @@
+# Se guarda como .dockerignore junto al Dockerfile
+.venv/
+__pycache__/
+*.pyc
+salida/
+datos/
+.git/
