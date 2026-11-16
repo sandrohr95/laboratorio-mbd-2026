@@ -5,6 +5,7 @@ Modela las fichas de un catálogo de datos abiertos con clases:
   - Dataset:  una ficha del catálogo (dataclass inmutable)
   - Catalogo: una colección de fichas que se puede recorrer, consultar y guardar
 
+Lee ENUNCIADO.md antes de empezar: explica cada TODO con ejemplos.
 Completa las partes A a E en orden. Después de cada parte, ejecuta:
     python3 comprobar.py        (en Windows: python comprobar.py)
 """
@@ -18,68 +19,113 @@ from pathlib import Path
 UMBRAL_GRANDE = 100_000
 
 
-# --------------------------------------------------------------------- Parte A
-# 1. Completa el Enum Formato con cuatro miembros: CSV, JSON, GEOJSON y XLSX.
-#    Su valor es el nombre en minúsculas: CSV = "csv".
+# ===================================================================== Parte A
 class Formato(StrEnum):
+    """Formatos de archivo admitidos en el catálogo."""
     CSV = "csv"
-    # ...
+    # TODO 1: añade los miembros JSON, GEOJSON y XLSX, con su nombre en minúsculas como valor
 
 
-# 2. Convierte Dataset en una dataclass inmutable (frozen=True) con estos campos,
-#    en este orden:
-#       id: str, titulo: str, organismo: str, formato: Formato, filas: int,
-#       actualizado: date, etiquetas: tuple[str, ...] = ()
-# 3. Añade __post_init__: lanza ValueError si el id está vacío o si filas es negativo.
-# 4. Añade la propiedad es_grande: True si filas >= UMBRAL_GRANDE.
+# TODO 2: convierte Dataset en una dataclass inmutable con @dataclass(frozen=True)
 class Dataset:
-    ...
+    """Una ficha del catálogo. Cada campo corresponde a una clave del JSON."""
 
-    # ----------------------------------------------------------------- Parte B
-    # 5. Método de clase desde_dict(cls, d): crea un Dataset a partir de un diccionario
-    #    como los de datos/datasets.json. Convierte cada valor a su tipo:
-    #    Formato(d["formato"]), date.fromisoformat(...), tuple(...).
-    #    Si la ficha no trae etiquetas, usa una tupla vacía.
-    # 6. Método a_dict(self): lo contrario. Devuelve un diccionario que se pueda
-    #    guardar en JSON: el formato como str, la fecha en formato ISO y las etiquetas como lista.
+    # TODO 2: declara los campos con su tipo, en este orden:
+    #   id: str
+    #   titulo: str
+    #   organismo: str
+    #   formato: Formato            ¡un Formato, no un str!
+    #   filas: int
+    #   actualizado: date           ¡un date, no un str!
+    #   etiquetas: tuple[str, ...] = ()
+
+    def __post_init__(self):
+        """Se ejecuta justo después del __init__ que genera la dataclass."""
+        # TODO 3: lanza ValueError si el id está vacío o si filas es negativo
+        pass
+
+    @property
+    def es_grande(self) -> bool:
+        """True si el dataset tiene UMBRAL_GRANDE filas o más."""
+        raise NotImplementedError("TODO 4")
+
+    # ================================================================= Parte B
+    @classmethod
+    def desde_dict(cls, d: dict) -> "Dataset":
+        """Crea un Dataset a partir de una ficha del JSON, convirtiendo cada valor a su tipo.
+
+        No captures errores aquí: si la ficha está mal, deja que salte el KeyError o el ValueError.
+        """
+        raise NotImplementedError("TODO 5")
+
+    def a_dict(self) -> dict:
+        """Devuelve la ficha como un diccionario que se puede guardar en JSON."""
+        raise NotImplementedError("TODO 6")
 
 
-# --------------------------------------------------------------------- Parte C
-# 7. Crea la excepción DatasetDuplicado, que hereda de Exception.
+# ===================================================================== Parte C
+# TODO 7: crea la excepción DatasetDuplicado, una clase que hereda de Exception
 
 
 class Catalogo:
+    """Un catálogo de datasets: los guarda por su id y permite consultarlos."""
+
     def __init__(self, nombre: str):
-        # 8. Guarda el nombre, un diccionario vacío self._datasets (id → Dataset)
-        #    y un contador self.descartados = 0.
-        ...
+        # TODO 8: guarda el nombre, un diccionario vacío self._datasets (id → Dataset)
+        #         y el contador self.descartados = 0
+        raise NotImplementedError("TODO 8")
 
-    # 9. agregar(self, dataset): lo añade al diccionario. Si el id ya existe,
-    #    lanza DatasetDuplicado.
+    def agregar(self, dataset: Dataset) -> None:
+        """Añade un dataset. Si su id ya existe, lanza DatasetDuplicado."""
+        raise NotImplementedError("TODO 9")
 
-    # 10. Métodos especiales:
-    #     __len__        → número de datasets
-    #     __iter__       → recorre los Dataset (no los ids)
-    #     __contains__   → "paradas-emt" in catalogo
-    #     __getitem__    → catalogo["paradas-emt"] devuelve el Dataset
-    #     __repr__       → Catalogo('Datos abiertos', 26 datasets)
+    # TODO 10: los métodos especiales
+    def __len__(self) -> int:
+        """len(catalogo): el número de datasets."""
+        raise NotImplementedError("TODO 10")
 
-    # ----------------------------------------------------------------- Parte D
-    # 11. buscar(self, texto): lista de Dataset cuyo título o alguna etiqueta contiene
-    #     el texto, sin distinguir mayúsculas de minúsculas.
-    # 12. por_formato(self, formato): lista de Dataset con ese formato.
-    # 13. mas_recientes(self, n=5): los n Dataset actualizados más recientemente,
-    #     del más nuevo al más antiguo.
-    # 14. resumen(self): diccionario {formato: número de datasets}, con las claves
-    #     como str y ordenadas alfabéticamente: {"csv": ..., "geojson": ..., ...}
+    def __iter__(self):
+        """for d in catalogo: recorre los Dataset (no los ids)."""
+        raise NotImplementedError("TODO 10")
 
-    # ----------------------------------------------------------------- Parte E
-    # 15. Método de clase desde_json(cls, ruta, nombre="Catálogo"): crea un catálogo,
-    #     lee el JSON y añade cada ficha con Dataset.desde_dict(). Las fichas con
-    #     errores lanzan KeyError o ValueError: captúralas, no las añadas y súmalas
-    #     en descartados.
-    # 16. guardar_json(self, ruta): guarda todos los datasets (con a_dict) en un JSON.
-    #     Crea la carpeta de destino si no existe.
+    def __contains__(self, id_dataset: str) -> bool:
+        """id in catalogo: True si hay un dataset con ese id."""
+        raise NotImplementedError("TODO 10")
+
+    def __getitem__(self, id_dataset: str) -> Dataset:
+        """catalogo["paradas-emt"]: el Dataset con ese id."""
+        raise NotImplementedError("TODO 10")
+
+    def __repr__(self) -> str:
+        """Catalogo('Prueba', 2 datasets)"""
+        raise NotImplementedError("TODO 10")
+
+    # ================================================================= Parte D
+    def buscar(self, texto: str) -> list[Dataset]:
+        """Datasets cuyo título o alguna etiqueta contienen el texto, sin distinguir mayúsculas."""
+        raise NotImplementedError("TODO 11")
+
+    def por_formato(self, formato: Formato) -> list[Dataset]:
+        """Datasets con ese formato."""
+        raise NotImplementedError("TODO 12")
+
+    def mas_recientes(self, n: int = 5) -> list[Dataset]:
+        """Los n datasets actualizados más recientemente, del más nuevo al más antiguo."""
+        raise NotImplementedError("TODO 13")
+
+    def resumen(self) -> dict[str, int]:
+        """{formato: número de datasets}, con las claves como texto y ordenadas alfabéticamente."""
+        raise NotImplementedError("TODO 14")
+
+    # ================================================================= Parte E
+    @classmethod
+    def desde_json(cls, ruta: str | Path, nombre: str = "Catálogo") -> "Catalogo":
+        """Crea un catálogo a partir de un JSON. Descarta las fichas con errores y las cuenta."""
+        raise NotImplementedError("TODO 15")
+
+    def guardar_json(self, ruta: str | Path) -> None:
+        """Guarda todos los datasets en un JSON, creando la carpeta de destino si no existe."""
+        raise NotImplementedError("TODO 16")
 
 
 if __name__ == "__main__":

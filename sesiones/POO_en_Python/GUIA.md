@@ -82,7 +82,8 @@ En un proyecto real, las clases no viven en un notebook, sino en **archivos `.py
 
 | Archivo | Contenido |
 |---|---|
-| `catalogo.py` | El esqueleto que tienes que completar. Las instrucciones están en los comentarios, numeradas del 1 al 16 |
+| `ENUNCIADO.md` | **Léelo primero.** Explica el diseño de las clases, cómo son los datos y cada tarea con ejemplos de uso y su resultado |
+| `catalogo.py` | El esqueleto que tienes que completar. Los métodos ya están declarados: cada tarea está marcada con `TODO` y un número del 1 al 16 |
 | `datos/datasets.json` | 30 fichas de un catálogo de datos abiertos: título, organismo, formato, número de filas, fecha de actualización y etiquetas. **Son datos simulados** |
 | `comprobar.py` | Comprueba tu solución parte a parte. **No lo modifiques** |
 
