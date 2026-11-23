@@ -2,7 +2,7 @@
 
 > **Guía de laboratorio.** Hoy no hay teoría nueva: vas a **practicar** lo que ya conoces. Son dos prácticas encadenadas sobre el mismo proyecto, el catálogo de datasets: primero lo terminas en Python y después lo metes en un contenedor. Si te sobra tiempo, tienes unos retos de depuración.
 
-**Material:** [diapositivas](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Taller_Python_Docker.html) · [chuleta](CHEATSHEET.md) · [`ejercicios/catalogo-docker/`](ejercicios/catalogo-docker) · [`retos/`](retos)
+**Material:** [diapositivas](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Taller_Python_Docker.html) · [chuleta](CHEATSHEET.md) · [`ejercicios/catalogo-docker/`](ejercicios/catalogo-docker) · [`retos/`](retos) · [soluciones](soluciones)
 
 ## Cómo vamos a trabajar
 

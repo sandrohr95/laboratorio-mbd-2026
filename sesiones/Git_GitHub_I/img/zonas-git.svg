@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 480" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <defs>
+    <marker id="fl" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto"><path d="M0,1 L15,8 L0,15 z" fill="#db7810"/></marker>
+    <marker id="fg" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto"><path d="M0,1 L15,8 L0,15 z" fill="#6b6b6b"/></marker>
+  </defs>
+  <rect width="1080" height="480" rx="18" fill="#ffffff"/>
+  <text x="540" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1f1f1f">Las cuatro zonas por las que pasan tus cambios</text>
+
+  <!-- Tu ordenador -->
+  <rect x="20" y="56" width="790" height="370" rx="14" fill="#f3f8fd" stroke="#2f80c8" stroke-width="2"/>
+  <text x="40" y="82" font-size="15" font-weight="700" fill="#2f80c8">Tu ordenador</text>
+
+  <!-- Carpeta .git -->
+  <rect x="285" y="64" width="505" height="250" rx="12" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="300" y="86" font-size="13" fill="#555" font-family="ui-monospace, Menlo, monospace">.git/  (carpeta oculta)</text>
+
+  <!-- 1 · Directorio de trabajo -->
+  <rect x="40" y="98" width="215" height="200" rx="12" fill="#ffffff" stroke="#2f80c8" stroke-width="1.5"/>
+  <rect x="75" y="110" width="50" height="16" rx="4" fill="#dceefd" stroke="#2f80c8" stroke-width="1.5"/>
+  <rect x="75" y="120" width="145" height="82" rx="6" fill="#dceefd" stroke="#2f80c8" stroke-width="1.5"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#1f1f1f">
+    <text x="88" y="146">catalogo.py</text>
+    <circle cx="190" cy="142" r="5" fill="#db7810"/>
+    <text x="88" y="167">README.md</text>
+    <circle cx="176" cy="163" r="5" fill="#db7810"/>
+    <text x="88" y="188">datos/</text>
+  </g>
+  <text x="147" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#1f1f1f">1 · Directorio de trabajo</text>
+  <text x="147" y="256" text-anchor="middle" font-size="13" fill="#444">Tus archivos: aquí editas,</text>
+  <text x="147" y="275" text-anchor="middle" font-size="13" fill="#444">pruebas y rompes cosas</text>
+
+  <!-- 2 · Área de preparación -->
+  <rect x="300" y="98" width="215" height="200" rx="12" fill="#ffffff" stroke="#db7810" stroke-width="1.5"/>
+  <rect x="335" y="112" width="145" height="90" rx="8" fill="#fff4e6" stroke="#db7810" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="407" y="129" text-anchor="middle" font-size="12" font-weight="700" fill="#db7810">próximo commit</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#1f1f1f">
+    <rect x="350" y="138" width="115" height="24" rx="5" fill="#ffe4c4" stroke="#db7810"/>
+    <text x="407" y="155" text-anchor="middle">README.md</text>
+    <rect x="350" y="169" width="115" height="24" rx="5" fill="#ffe4c4" stroke="#db7810"/>
+    <text x="407" y="186" text-anchor="middle">.gitignore</text>
+  </g>
+  <text x="407" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#1f1f1f">2 · Área de preparación</text>
+  <text x="407" y="256" text-anchor="middle" font-size="13" fill="#444">Lo que has elegido para</text>
+  <text x="407" y="275" text-anchor="middle" font-size="13" fill="#444">la próxima foto (staging)</text>
+
+  <!-- 3 · Repositorio local -->
+  <rect x="560" y="98" width="215" height="200" rx="12" fill="#ffffff" stroke="#2f80c8" stroke-width="1.5"/>
+  <line x1="605" y1="165" x2="729" y2="165" stroke="#2f80c8" stroke-width="3"/>
+  <circle cx="605" cy="165" r="14" fill="#2f80c8"/>
+  <circle cx="667" cy="165" r="14" fill="#2f80c8"/>
+  <circle cx="729" cy="165" r="14" fill="#2f80c8"/>
+  <rect x="707" y="114" width="44" height="22" rx="5" fill="#db7810"/>
+  <text x="729" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff" font-family="ui-monospace, Menlo, monospace">main</text>
+  <line x1="729" y1="136" x2="729" y2="150" stroke="#db7810" stroke-width="2"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="#444" text-anchor="middle">
+    <text x="605" y="198">a1f3c9e</text>
+    <text x="667" y="198">4b2d07f</text>
+    <text x="729" y="198">9e81c3a</text>
+  </g>
+  <text x="667" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#1f1f1f">3 · Repositorio local</text>
+  <text x="667" y="256" text-anchor="middle" font-size="13" fill="#444">La historia: fotos guardadas</text>
+  <text x="667" y="275" text-anchor="middle" font-size="13" fill="#444">que ya no cambian</text>
+
+  <!-- GitHub -->
+  <rect x="835" y="56" width="225" height="370" rx="14" fill="#f6fbea" stroke="#8aa61f" stroke-width="2"/>
+  <text x="855" y="82" font-size="15" font-weight="700" fill="#5c7212">GitHub (servidor)</text>
+
+  <!-- 4 · Repositorio remoto -->
+  <rect x="850" y="98" width="195" height="200" rx="12" fill="#ffffff" stroke="#8aa61f" stroke-width="1.5"/>
+  <path d="M895,190 a22,22 0 0 1 6,-43 a30,30 0 0 1 56,-14 a25,25 0 0 1 41,19 a20,20 0 0 1 -3,38 z" fill="#eef5d3" stroke="#8aa61f" stroke-width="1.5"/>
+  <line x1="925" y1="170" x2="969" y2="170" stroke="#8aa61f" stroke-width="2.5"/>
+  <circle cx="925" cy="170" r="8" fill="#8aa61f"/>
+  <circle cx="947" cy="170" r="8" fill="#8aa61f"/>
+  <circle cx="969" cy="170" r="8" fill="#8aa61f"/>
+  <text x="947" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#1f1f1f">4 · Repositorio remoto</text>
+  <text x="947" y="256" text-anchor="middle" font-size="13" fill="#444">Copia de la historia para</text>
+  <text x="947" y="275" text-anchor="middle" font-size="13" fill="#444">compartirla y no perderla</text>
+
+  <!-- Flechas hacia delante -->
+  <g stroke="#db7810" stroke-width="3" fill="none">
+    <line x1="147" y1="336" x2="395" y2="336" marker-end="url(#fl)"/>
+    <line x1="419" y1="336" x2="655" y2="336" marker-end="url(#fl)"/>
+    <line x1="679" y1="336" x2="935" y2="336" marker-end="url(#fl)"/>
+  </g>
+  <g fill="#db7810">
+    <circle cx="147" cy="336" r="5"/>
+    <circle cx="407" cy="336" r="5"/>
+    <circle cx="667" cy="336" r="5"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#db7810" text-anchor="middle">
+    <text x="275" y="326">git add</text>
+    <text x="537" y="326">git commit</text>
+    <text x="745" y="326">git push</text>
+  </g>
+
+  <!-- Flechas de vuelta -->
+  <g stroke="#6b6b6b" stroke-width="2.5" fill="none" stroke-dasharray="8 5">
+    <line x1="947" y1="372" x2="682" y2="372" marker-end="url(#fg)"/>
+    <line x1="667" y1="410" x2="150" y2="410" marker-end="url(#fg)"/>
+  </g>
+  <g font-size="13" fill="#444" text-anchor="middle">
+    <text x="795" y="364" text-anchor="end"><tspan font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#1f1f1f">git fetch</tspan> · <tspan font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#1f1f1f">git pull</tspan></text>
+    <text x="420" y="399"><tspan font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#1f1f1f">git restore archivo</tspan>: descarta tus cambios y vuelve a la versión del último commit</text>
+  </g>
+
+  <text x="540" y="458" text-anchor="middle" font-size="14" fill="#1f1f1f">Un commit es una foto del <tspan font-weight="700">área de preparación</tspan>, no de tu carpeta. Lo que no subes con <tspan font-family="ui-monospace, Menlo, monospace" font-weight="700">git push</tspan> no está en GitHub.</text>
+</svg>

@@ -1,0 +1,360 @@
+[
+  {
+    "id": "aparcamientos-publicos",
+    "titulo": "Aparcamientos públicos",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "csv",
+    "filas": 48,
+    "actualizado": "2026-10-02",
+    "etiquetas": [
+      "movilidad",
+      "aparcamiento"
+    ]
+  },
+  {
+    "id": "ocupacion-aparcamientos",
+    "titulo": "Ocupación de aparcamientos en tiempo real",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "json",
+    "filas": 215400,
+    "actualizado": "2026-10-30",
+    "etiquetas": [
+      "movilidad",
+      "aparcamiento",
+      "tiempo real"
+    ]
+  },
+  {
+    "id": "calidad-aire-horaria",
+    "titulo": "Calidad del aire: mediciones horarias",
+    "organismo": "Junta de Andalucía",
+    "formato": "csv",
+    "filas": 438000,
+    "actualizado": "2026-10-28",
+    "etiquetas": [
+      "medio ambiente",
+      "contaminación"
+    ]
+  },
+  {
+    "id": "calidad-aire-diaria",
+    "titulo": "Calidad del aire: medias diarias",
+    "organismo": "Junta de Andalucía",
+    "formato": "csv",
+    "filas": 18250,
+    "actualizado": "2026-10-01",
+    "etiquetas": [
+      "medio ambiente",
+      "contaminación"
+    ]
+  },
+  {
+    "id": "callejero",
+    "titulo": "Callejero municipal",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "pdf",
+    "filas": 6400,
+    "actualizado": "2026-03-03",
+    "etiquetas": [
+      "urbanismo"
+    ]
+  },
+  {
+    "id": "zonas-juego",
+    "titulo": "Zonas de juego al aire libre",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "geojson",
+    "filas": 312,
+    "actualizado": "2026-03-11",
+    "etiquetas": [
+      "ocio",
+      "infancia"
+    ]
+  },
+  {
+    "id": "paradas-emt",
+    "titulo": "Paradas de autobús",
+    "organismo": "EMT Málaga",
+    "formato": "geojson",
+    "filas": 1120,
+    "actualizado": "2026-07-15",
+    "etiquetas": [
+      "movilidad",
+      "transporte"
+    ]
+  },
+  {
+    "id": "lineas-emt",
+    "titulo": "Líneas y recorridos de autobús",
+    "organismo": "EMT Málaga",
+    "formato": "geojson",
+    "filas": 46,
+    "actualizado": "2026-06-30",
+    "etiquetas": [
+      "movilidad",
+      "transporte"
+    ]
+  },
+  {
+    "id": "validaciones-emt",
+    "titulo": "Validaciones de viajeros por parada",
+    "organismo": "EMT Málaga",
+    "formato": "csv",
+    "filas": 1250000,
+    "actualizado": "2026-10-15",
+    "etiquetas": [
+      "movilidad",
+      "transporte",
+      "viajeros"
+    ]
+  },
+  {
+    "id": "estaciones-bici",
+    "titulo": "Estaciones de bicicleta pública",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "json",
+    "filas": 12,
+    "actualizado": "2026-09-01",
+    "etiquetas": [
+      "movilidad",
+      "bicicleta"
+    ]
+  },
+  {
+    "id": "carril-bici",
+    "titulo": "Red de carriles bici",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "geojson",
+    "filas": 205,
+    "actualizado": "2026-05-20",
+    "etiquetas": [
+      "movilidad",
+      "bicicleta"
+    ]
+  },
+  {
+    "id": "accidentes-trafico",
+    "titulo": "Accidentes de tráfico",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "csv",
+    "filas": -1,
+    "actualizado": "2026-08-25",
+    "etiquetas": [
+      "movilidad",
+      "seguridad"
+    ]
+  },
+  {
+    "id": "padron-barrios",
+    "titulo": "Población empadronada por barrio",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "xlsx",
+    "filas": 1380,
+    "actualizado": "2026-01-31",
+    "etiquetas": [
+      "población",
+      "demografía"
+    ]
+  },
+  {
+    "id": "nacimientos-provincia",
+    "titulo": "Nacimientos por municipio",
+    "organismo": "INE",
+    "formato": "csv",
+    "filas": 2060,
+    "actualizado": "2026-06-18",
+    "etiquetas": [
+      "población",
+      "demografía"
+    ]
+  },
+  {
+    "id": "paro-municipal",
+    "titulo": "Paro registrado por municipio",
+    "organismo": "Junta de Andalucía",
+    "formato": "xlsx",
+    "filas": 12408,
+    "actualizado": "2026-10-06",
+    "etiquetas": [
+      "empleo",
+      "economía"
+    ]
+  },
+  {
+    "id": "afiliados-ss",
+    "titulo": "Afiliados a la Seguridad Social",
+    "organismo": "Junta de Andalucía",
+    "formato": "csv",
+    "filas": 9840,
+    "actualizado": "2026-09-12",
+    "etiquetas": [
+      "empleo",
+      "economía"
+    ]
+  },
+  {
+    "id": "temperaturas-diarias",
+    "titulo": "Temperaturas diarias del aeropuerto",
+    "organismo": "AEMET",
+    "formato": "csv",
+    "filas": 27390,
+    "actualizado": "2026-10-29",
+    "etiquetas": [
+      "clima",
+      "temperatura"
+    ]
+  },
+  {
+    "id": "",
+    "titulo": "Fuentes de agua potable",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "geojson",
+    "filas": 340,
+    "actualizado": "2026-06-02",
+    "etiquetas": [
+      "servicios"
+    ]
+  },
+  {
+    "id": "precipitaciones",
+    "titulo": "Precipitación acumulada mensual",
+    "organismo": "AEMET",
+    "formato": "csv",
+    "filas": 1140,
+    "actualizado": "2026-10-05",
+    "etiquetas": [
+      "clima",
+      "lluvia"
+    ]
+  },
+  {
+    "id": "avisos-meteo",
+    "titulo": "Avisos meteorológicos",
+    "organismo": "AEMET",
+    "formato": "json",
+    "filas": 3410,
+    "actualizado": "2026-10-27",
+    "etiquetas": [
+      "clima",
+      "avisos"
+    ]
+  },
+  {
+    "id": "puntos-limpios",
+    "titulo": "Puntos limpios",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "geojson",
+    "filas": 9,
+    "actualizado": "2025-11-14",
+    "etiquetas": [
+      "medio ambiente",
+      "residuos"
+    ]
+  },
+  {
+    "id": "contenedores",
+    "titulo": "Contenedores de residuos",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "geojson",
+    "filas": 14820,
+    "actualizado": "2026-08-08",
+    "etiquetas": [
+      "medio ambiente",
+      "residuos"
+    ]
+  },
+  {
+    "id": "arbolado",
+    "titulo": "Arbolado urbano",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "csv",
+    "filas": 131500,
+    "actualizado": "2026-04-22",
+    "etiquetas": [
+      "medio ambiente",
+      "parques"
+    ]
+  },
+  {
+    "id": "ruido",
+    "titulo": "Mapa de ruido",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "geojson",
+    "filas": 2150,
+    "etiquetas": [
+      "medio ambiente"
+    ]
+  },
+  {
+    "id": "museos",
+    "titulo": "Museos y salas de exposiciones",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "json",
+    "filas": 41,
+    "actualizado": "2025-12-19",
+    "etiquetas": [
+      "cultura",
+      "turismo"
+    ]
+  },
+  {
+    "id": "pernoctaciones",
+    "titulo": "Pernoctaciones en hoteles",
+    "organismo": "INE",
+    "formato": "csv",
+    "filas": 7200,
+    "actualizado": "2026-10-20",
+    "etiquetas": [
+      "turismo",
+      "economía"
+    ]
+  },
+  {
+    "id": "viviendas-turisticas",
+    "titulo": "Viviendas con fines turísticos",
+    "organismo": "Junta de Andalucía",
+    "formato": "xlsx",
+    "filas": 29870,
+    "actualizado": "2026-07-01",
+    "etiquetas": [
+      "turismo",
+      "vivienda"
+    ]
+  },
+  {
+    "id": "licencias-obra",
+    "titulo": "Licencias de obra concedidas",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "csv",
+    "filas": 5630,
+    "actualizado": "2026-02-27",
+    "etiquetas": [
+      "urbanismo",
+      "vivienda"
+    ]
+  },
+  {
+    "id": "presupuesto-municipal",
+    "titulo": "Presupuesto municipal por partidas",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "xlsx",
+    "filas": 2480,
+    "actualizado": "2026-01-08",
+    "etiquetas": [
+      "economía",
+      "hacienda"
+    ]
+  },
+  {
+    "id": "wifi-publico",
+    "titulo": "Puntos de wifi público",
+    "organismo": "Ayuntamiento de Málaga",
+    "formato": "json",
+    "filas": 87,
+    "actualizado": "2025-09-30",
+    "etiquetas": [
+      "tecnología",
+      "servicios"
+    ]
+  }
+]
