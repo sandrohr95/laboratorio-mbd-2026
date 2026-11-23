@@ -2,7 +2,7 @@
 
 > **Guía de laboratorio.** Síguela durante la clase a la vez que las diapositivas. Cada bloque termina con un **punto de control**: si no lo superas, avisa antes de seguir.
 
-**Material:** [diapositivas](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Git_GitHub_I.html) · [chuleta](CHEATSHEET.md) · [`ejercicios/catalogo-datasets`](ejercicios/catalogo-datasets) (el proyecto, listo para copiar) · [`ejercicios/detective.zip`](ejercicios/detective.zip)
+**Material:** [diapositivas](https://sandrohr95.github.io/laboratorio-mbd-2026/slides/Git_GitHub_I.html) · [chuleta](CHEATSHEET.md) · [`ejercicios/catalogo-datasets`](ejercicios/catalogo-datasets) (el proyecto, listo para copiar) · [`ejercicios/detective.zip`](ejercicios/detective.zip) · [solución del detective](soluciones)
 
 **Qué vas a hacer:** poner tu proyecto, el **catálogo de datasets**, bajo control de versiones; aprender a investigar la historia de un proyecto; trabajar con ramas y resolver conflictos; y subir tu catálogo a GitHub. Al terminar, `comprobar_git.py` revisará tu repositorio de arriba abajo.
 
@@ -378,6 +378,8 @@ Esta vez el grafo muestra dos líneas que se unen en un **commit de fusión**: l
 ### 4.4 Para casa · Detective de Git (parte B)
 
 Si vas por el carril rápido, hazla ahora; si no, en casa. Vuelve al proyecto del detective y haz la **parte B** de `PREGUNTAS.md`: corrige el error, recupera el archivo borrado y fusiona la rama pendiente, resolviendo el conflicto. Habrás terminado cuando, desde la carpeta `detective`, `python3 comprobar.py` termine con *Caso resuelto*.
+
+La [solución del detective](soluciones), con las partes A y B explicadas paso a paso, está en la carpeta `soluciones`, junto a esta guía. Consúltala después de intentarlo.
 
 ---
 
